@@ -49,7 +49,7 @@ const links = [
   },
   {
     name: "Payments",
-    href: "/",
+    href: "/dashboard/payments",
     icon: <MdOutlinePayments />,
   },
   {
@@ -88,7 +88,7 @@ const NavLinks = () => {
             href={link.href}
             key={link.href}
             className={cn(
-              "flex  grow items-center justify-center gap-4 p-1 text-sm text-zinc-400  md:flex-none md:justify-start md:py-1.5",
+              "flex  grow items-center justify-center gap-4 p-1 pl-2 text-sm text-zinc-400  md:flex-none md:justify-start md:py-1.5 hover:text-zinc-100",
               {
                 " text-white": pathname === link.href,
               },
