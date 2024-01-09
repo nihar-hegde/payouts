@@ -12,19 +12,19 @@ import {
 
 export const SideNavbar = () => {
   return (
-    <div className="flex h-full flex-col px-3 py-4 md:px-2  rounded-tr-lg rounded-br-lg">
-      <div className="flex flex-row gap-3">
+    <div className="flex max-h-screen flex-col px-3 py-4 md:px-2  rounded-tr-lg rounded-br-lg">
+      <div className="flex flex-row justify-between">
         <Avatar>
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <div className="flex flex-col text-white">
+        <div className="flex flex-col text-white items-center">
           <h1>Nihar</h1>
           <p>view store</p>
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <ArrowBigDown />
+            <ArrowBigDown className="text-white" />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>LogOut</DropdownMenuItem>

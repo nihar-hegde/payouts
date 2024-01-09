@@ -88,10 +88,10 @@ const NavLinks = () => {
             href={link.href}
             key={link.href}
             className={cn(
-              "flex  grow items-center justify-center gap-4 p-1 text-sm text-zinc-400 font-medium  md:flex-none md:justify-start md:px-3",
+              "flex  grow items-center justify-center gap-4 p-1 text-sm text-zinc-400  md:flex-none md:justify-start md:py-1.5",
               {
                 " text-white": pathname === link.href,
-              }
+              },
             )}
           >
             {link.icon}
